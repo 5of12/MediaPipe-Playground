@@ -10,10 +10,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        bodyCentricHands: resolve(__dirname, 'MediaPipeBodyCentricHands.html'),
-        mpThreeModelViewer: resolve(__dirname, 'SpinTheShark.html'),
-        mpWorld: resolve(__dirname, 'WorldInYourHands.html'),
-        mpStarfield: resolve(__dirname, 'WarpFingers.html')
+        bodyCentricHands: resolve(__dirname, 'examples/MediaPipeDebug.html'),
+        mpThreeModelViewer: resolve(__dirname, 'examples/SpinTheShark.html'),
+        mpWorld: resolve(__dirname, 'examples/WorldInYourHands.html'),
+        mpStarfield: resolve(__dirname, 'examples/WarpFingers.html')
       },
     },
   },
