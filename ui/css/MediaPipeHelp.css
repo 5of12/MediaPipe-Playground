@@ -1,0 +1,121 @@
+.tutorial-origin {
+    position: fixed;
+    top: 75%;
+    left: 50%;
+}
+
+.tutorial-origin.video {
+    width: 320px;
+    height: 240px;
+    z-index: 9;
+    opacity: 75%;
+    pointer-events: none;
+    
+    -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.21) 50%, rgba(0, 0, 0, 0.0) 60%);
+    mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.0) 60%);
+}
+
+.tutorial-origin.instruction {
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+
+    font-size: 1.5em;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    height: 240px;
+    border-radius: 120px;
+    z-index: 10;
+}
+
+.tutorial-origin.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 40px;
+    font-size: 1.5em;
+    width: 160px;
+    height: 200px;
+    z-index: 11;
+}
+
+.hidden
+{
+    opacity: 0%;
+    transition: opacity 1s;
+}
+
+.visible
+{
+    opacity: 90%;
+    transition: opacity 1s;
+}
+
+.searching {
+    border-style: solid;
+    border-color: rgb(127, 255, 212);
+    border-width: 20px;
+    
+    animation-name: borderPulse;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.waiting {
+    border-color: rgb(127, 255, 212);
+    border-width: 2px;
+}
+
+.tutorial-origin.text.lower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, 5%);
+    text-align: center;
+    padding: 40px;
+    font-size: 1.5em;
+    width: 400px;
+    height: 200px;
+    z-index: 11;
+}
+
+@keyframes borderPulse {
+    0% {
+        border-color: rgba(0, 0, 0, 0.0);
+    }
+    50% {
+        border-color: rgba(127, 255, 212, 0.5);
+    }
+    100% {
+        border-color: rgba(0, 0, 0, 0.0);
+        border-width: 0;
+    }
+}
+
+.shrink {
+    transform: scale(-0.5, 0.5) translate(100%, -50%);
+    transition: all 10s ease-in-out 5s;
+}
+
+.flipped {
+    transform: scale(-1, 1) translate(50%, -50%);
+    transition: all 0.2s ease-in;
+}
+
+.github-icon {
+    z-index: 1000;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.github-icon a {
+    background: url(../svg/github-mark.svg) 50% /contain no-repeat;
+    width: 30px;
+    height: 30px;
+    display: block;
+}

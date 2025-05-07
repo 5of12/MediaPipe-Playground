@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Explore the World with your hands!</title>
+    <link rel="stylesheet" href="ui/css/deckgl.css">
+    <link rel="stylesheet" type="text/css" href="ui/css/MediaPipeHands.css">
+    <link rel="stylesheet" href="ui/css/MediaPipeHelp.css">
+    <script type="module" src="./scripts/deckglmap.js"></script>
+    <script type="module" src="scripts/MediaPipeMultiHandInput.js"></script>
+  </head>
+  <body>
+  <div class="tutorial">
+    <button class="tutorial-origin instruction hidden waiting">
+    </button>
+    <div class="tutorial-origin text">
+      Enable the camera and make yourself visible
+    </div>
+    <div class="tutorial-origin text lower">
+      Pinch-Move to pan the map.<br>
+      Two hands pinch in/out to zoom.
+    </div>
+    <canvas class="tutorial-origin video flipped" ></canvas>
+  </div>
+  <mediapipe-tracking track-hands="true" track-body="true" show-video="false" show-landmarks="false"></mediapipe-tracking>
+  <div class="github-icon">
+    <a href="https://github.com/5of12/MediaPipe-Playground" target="_blank" title="View on GitHub"></a>
+  </div>
+  </body>
+</html>

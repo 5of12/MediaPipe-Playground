@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="module" src="scripts/starfield.js"></script>
+    <script type="module" src="scripts/MediaPipeWarpFingerPoses.js"></script>
+    <link rel="stylesheet" href="ui/css/starfield.css">
+    <link rel="stylesheet" href="./ui/css/MediaPipeHands.css">
+    <link rel="stylesheet" href="./ui/css/MediaPipeHelp.css">
+    <link rel="stylesheet" href="./ui/css/Shortcuts.css">
+    <link rel="stylesheet" href="./ui/css/checkbox.css">
+    <title>Warp Fingers - Make a pose to Warp!</title>
+</head>
+<body>
+
+<!-- From Uiverse.io by vinodjangid07 -->
+<input type="checkbox" id="checkboxInput">
+<label for="checkboxInput" class="toggleSwitch">
+    <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+        <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
+        <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
+    </svg></div>
+
+    <div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+        <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
+        <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
+    </svg></div>
+</label>
+
+<div class="starfield">
+    <button class="starfield-origin hidden">Sit back and raise a hand to play with the stars...</button>
+</div>
+<canvas class="starfield-video-canvas"></canvas>
+
+<div id="iconOverlay" class="iconOverlay minimise" >
+    <div id="oneIcon" class="viewIcons">
+        <img class="viewIcon" src="media/Icons/OneOutlineShadow.png" />
+    </div>
+    <div id="twoIcon" class="viewIcons two">
+        <img class="viewIcon" src="media/Icons/TwoOutlineShadow.png" />
+    </div>
+    <div id="threeIcon" class="viewIcons three">
+        <img class="viewIcon" src="media/Icons/ThreeOutlineShadow.png" />
+    </div>
+    <div id="fourIcon" class="viewIcons four">
+        <img class="viewIcon" src="media/Icons/FourOutlineShadow.png" />
+    </div>
+    <div id="fiveIcon" class="viewIcons five">
+        <img class="viewIcon" src="media/Icons/FiveOutlineShadow.png" />
+    </div>
+
+    <button class="pose-tip">Hold a finger pose to warp!</button>
+</div>
+<mediapipe-tracking show-video="false" show-landmarks="false" track-hands="true" track-body="true" check-finger-poses="true"></mediapipe-tracking>
+
+<div class="github-icon">
+    <a href="https://github.com/5of12/MediaPipe-Playground" target="_blank" title="View on GitHub"></a>
+</div>
+
+<footer>
+    Starfield by
+    <a href="https://starfield.js.org" target="_blank" title="starfield.js.org">starfield.js</a>
+</footer>
+</body>
+</html>

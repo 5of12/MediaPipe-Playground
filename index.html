@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>MediaPipe Examples</title>
+    <style>
+        h1 {
+            color: #2e2e2e;
+            text-align: center;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 40px;
+        }
+
+        h2 {
+            color: #2e2e2e;
+            text-align: center;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+
+        #vstack {
+            display: flex;
+            flex-wrap: wrap;
+            width: 600px;
+            margin: auto;
+            margin-top: 5vh;
+            background-color: #e2e2e2;
+            border-radius: 10px;
+            filter: drop-shadow(0px 5px 10px gray);
+        }
+
+        #body {
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #scroll-list {
+            background-color: transparent;
+            margin-top: 0%;
+            margin-left: auto;
+            margin-right: auto;
+            list-style: none;
+            border-radius: 15px;
+            padding: 10px;
+            inline-size: 50%;
+        }
+
+        #scroll-list-item {
+            background-color: #4e4e4e;
+            color: azure;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        
+        #scroll-list-item:hover {
+          background-color: hsl(160 50% 50%);
+          filter: drop-shadow(0px 4px 5px gray);
+        }
+
+        .exampleLink {
+          text-decoration: none;
+          text-align: center;
+          color: white;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+      </style>
+  </head>
+  <body id="body">
+    <gesture-control-debug></gesture-control-debug>
+    <div id="vstack">
+      <h1>Gesture Examples</h1>
+          <ul id="scroll-list">
+            <li id="scroll-list-item"><a class="exampleLink" href="./WorldInYourHands.html">World In Your Hands</a></li>
+            <li id="scroll-list-item"><a class="exampleLink" href="SpinTheShark.html">Spin The Shark</a></li>
+            <li id="scroll-list-item"><a class="exampleLink" href="WarpFingers.html">Warp Fingers</a></li>
+            <li id="scroll-list-item"><a class="exampleLink" href="./MediaPipeBodyCentricHands.html">Debug MediaPipe</a></li>
+          </ul>
+    </div>
+  </body>
+</html>

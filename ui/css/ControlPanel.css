@@ -1,0 +1,53 @@
+#control-panel {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 30px;
+  width: 600px;
+  border-radius: 10px;
+  font-size: 24px;
+  line-height: 3;
+  z-index: 1;
+  background: rgba(255, 255, 255, .5);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.slider-row {
+    width: 100%;
+    padding: 2px;
+}
+.slider-row > label {
+    width: 110px;
+}
+
+input[type=range]{
+    -webkit-appearance: none;
+    background: rgba(255, 255, 255, 0);
+    width: 380px;
+    height: 20px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 30px;
+    background: #ddd;
+    border: none;
+    border-radius: 20px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: darkorange;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}

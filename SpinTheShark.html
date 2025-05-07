@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Spin the Shark! A ThreeJS MediaPipe Model Viewer</title>
+
+    <link rel="stylesheet" href="ui/css/MediaPipeHelp.css">
+    <link rel="stylesheet" type="text/css" href="ui/css/MediaPipeHands.css">
+    <script type="module" src="scripts/MouseLikePointerInput.js"></script>
+    <script type="module" src="scripts/ThreeJSModelViewer.js"></script>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="container" id="viewer">
+      <mediapipe-tracking track-hands="true" track-body="true" show-video="false" show-landmarks="false"></mediapipe-tracking>
+  </div>
+
+  <div class="tutorial">
+    <button class="tutorial-origin instruction hidden waiting">
+    </button>
+    <div class="tutorial-origin text">
+      Enable the camera and make yourself visible
+    </div>
+    <div class="tutorial-origin text lower">
+      Pinch and drag to spin the shark
+    </div>
+    <canvas class="tutorial-origin video flipped" ></canvas>
+  </div>
+
+  <div class="github-icon">
+    <a href="https://github.com/5of12/MediaPipe-Playground" target="_blank" title="View on GitHub"></a>
+  </div>
+  </body>
+</html>
