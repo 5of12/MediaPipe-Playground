@@ -2,84 +2,54 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="../ui/css/index.css">
     <title>MediaPipe Examples</title>
-    <style>
-        h1 {
-            color: #2e2e2e;
-            text-align: center;
-            margin: auto;
-            font-family: "Funnel Sans", sans-serif;
-            padding: 40px;
-        }
-
-        h2 {
-            color: #2e2e2e;
-            text-align: center;
-            margin: auto;
-            font-family: "Funnel Sans", sans-serif;
-            padding: 20px;
-        }
-
-        #vstack {
-            display: flex;
-            flex-wrap: wrap;
-            width: 600px;
-            margin: auto;
-            margin-top: 5vh;
-            background-color: #e2e2e2;
-            border-radius: 10px;
-            filter: drop-shadow(0px 5px 10px gray);
-        }
-
-        #body {
-            background-color: lightgray;
-            font-family: "Funnel Sans", sans-serif;
-        }
-
-        #scroll-list {
-            background-color: transparent;
-            margin-top: 0%;
-            margin-left: auto;
-            margin-right: auto;
-            list-style: none;
-            border-radius: 15px;
-            padding: 10px;
-            inline-size: 50%;
-        }
-
-        #scroll-list-item {
-            background-color: #4e4e4e;
-            color: azure;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 10px;
-            text-align: center;
-        }
-        
-        #scroll-list-item:hover {
-          background-color: hsl(160 50% 50%);
-          filter: drop-shadow(0px 4px 5px gray);
-        }
-
-        .exampleLink {
-          text-decoration: none;
-          text-align: center;
-          color: white;
-          font-family: "Funnel Sans", sans-serif;
-        }
-
-      </style>
   </head>
+
   <body id="body">
-    <gesture-control-debug></gesture-control-debug>
-    <div id="vstack">
-      <h1>Gesture Examples</h1>
-          <ul id="scroll-list">
-            <li id="scroll-list-item"><a class="exampleLink" href="examples/WorldInYourHands.html">World In Your Hands</a></li>
-            <li id="scroll-list-item"><a class="exampleLink" href="examples/SpinTheShark.html">Spin The Shark</a></li>
-            <li id="scroll-list-item"><a class="exampleLink" href="examples/WarpFingers.html">Warp Fingers</a></li>
-            <li id="scroll-list-item"><a class="exampleLink" href="examples/MediaPipeDebug.html">Debug MediaPipe</a></li>
-          </ul>
-    </div>
+    <gesture-control-debug></gesture-control-debug> 
+      <div class="contentFrame">
+        <a href="http://5of12.co.uk">
+          <img src="./media/5of12_Logo_Borderless.png" alt="5of12 Logo" class="logo">
+        </a>
+        <h1>5of12 MediaPipe Playground</h1>
+        <p>
+          A collection of JavaScript examples showcasing Google's 
+            <a href="https://github.com/google-ai-edge/mediapipe">MediaPipe</a>. 
+        </p>
+        <p>
+          The examples focus on hand and body tracking for fun and experimentation.
+          <br>We also demonstrate how to combine Body with Hand tracking, for associating hands with Google's 
+            <a href="https://ai.google.dev/edge/api/mediapipe/js/tasks-vision">Tasks Vision API</a>
+        </p>
+        <div class="hstack">
+          <div id="exampleCard" class="exampleCard">
+            <a href="./examples/WorldInYourHands.html">
+              <img class="exampleImage" src="./media/map.gif" alt="World In Your Hands Example">
+            </a>
+            <p>Explore mapping data with two handed gestures. Pinch and zoom!</p>
+            <a class="exampleLink green" href="./examples/WorldInYourHands.html">World In Your Hands</a>
+          </div>
+          <div id="exampleCard" class="exampleCard" onclick="open('./examples/SpinTheShark.html')" >
+            <a href="./examples/SpinTheShark.html">
+              <img class="exampleImage" src="./media/shark.gif" alt="Spin The Shark Example">
+            </a>
+            <p>Give 3D objects a spin. <br>Explore the shark with a single hand!</p>
+            <a class="exampleLink yellow" href=".examples/SpinTheShark.html">Spin The Shark</a>
+          </div>
+          <div id="exampleCard" class="exampleCard">
+            <a href="./examples/WarpFingers.html">
+              <img class="exampleImage" src="./media/starfield.gif" alt="Warp Fingers Example">
+              </a>
+            <p>Head to the stars with pose detections. Engage warp speed!</p>
+            <a class="exampleLink blue" href="./examples/WarpFingers.html">Warp Fingers</a>
+          </div>
+        </div>
+        <a class="debugButton" href="./examples/MediaPipeDebug.html">Debug MediaPipe with Tiny Hands</a>
+        <p>Examples have been tested with Safari, Chrome, Arc, Edge for desktop. Not optimised for mobile.</p>
+        <div class="github-icon">
+          <a href="https://github.com/5of12/MediaPipe-Playground" target="_blank" title="View on GitHub"></a>
+        </div>
+      </div>
   </body>
 </html>

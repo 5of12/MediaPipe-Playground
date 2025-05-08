@@ -4,7 +4,11 @@ A collection of JavaScript examples showcasing Google's [Mediapipe API](https://
 <br>The examples focus on hand and body tracking for fun and experimentation.
 <br>We also demonstrate how to combine Body with Hand tracking, for associating hands with Google's [Tasks Vision API](https://ai.google.dev/edge/api/mediapipe/js/tasks-vision) 
 
-# Running Web Examples
+# Running the Examples
+
+Try them in you browser now! [MediaPipe Playground](5of12.github.io/MediaPipe-Playground)
+
+Or follow the instructions below to build locally.
 
 ## Requirements
 
@@ -27,7 +31,7 @@ All examples are designed to run in the browser, and assume you have given acces
 <img src="/media/settings.png" width="200">
 
 ## Spin the Shark
-This example shows how to explore a ThreeJS 3D Model with your hand.
+This example shows how to explore a ThreeJS 3D Model with your hand. Try it now: [Spin The Shark](https://5of12.github.io/MediaPipe-Playground/examples/SpinTheShark.html)
 
 ![Animation of a 3D shark being moved with a hand](/media/shark.gif "3D Model Animation")
 
@@ -35,7 +39,7 @@ This example shows how to explore a ThreeJS 3D Model with your hand.
 2. Pinch and drag to spin the shark!
 
 ## Warp Fingers
-This example shows how to warp through space, using five finger poses.
+This example shows how to warp through space, using five finger poses. Try it now: [Warp Fingers](https://5of12.github.io/MediaPipe-Playground/examples/WarpFingers.html)
 
 ![Animation of warping through space using finger poses](/media/starfield.gif "Space Warp Animation")
 
@@ -43,8 +47,8 @@ This example shows how to warp through space, using five finger poses.
 2. Form a finger pose by holding out 1-5 fingers.
 3. Hold the pose until you warp through space!
 
-## World in your Hands
-This example shows how to explore a 2D World Map using your hands.
+## World In Your Hands
+This example shows how to explore a 2D World Map using your hands. Try it now: [World in your Hands](https://5of12.github.io/MediaPipe-Playground/examples/WorldInYourHands.html)
 
 ![Animation of a 2D world map being explored with hands](/media/map.gif "2D Map Animation")
 
