@@ -6,6 +6,9 @@ let videoCanvas = document.querySelector('.video');
 
 
 export function ShowHelp(){
+    if (helpOverlay == null){
+        return;
+    }
     if (helpOverlay.classList.contains("hidden"))
     {
         HideSearching();
@@ -23,6 +26,9 @@ export function ShowHelp(){
 }
 
 export function HideHelp(){
+    if (helpOverlay == null){
+        return;
+    }
     if (helpOverlay.classList.contains("visible"))
     {
         helpOverlay.classList.remove("visible");
@@ -39,6 +45,10 @@ export function HideHelp(){
 }
 
 export function ShowSearching(msg = 'Sit back and hold hand at chest height') {
+    if (helpOverlay == null){
+        return;
+    }
+
     if (helpOverlay.classList.contains("waiting"))
     {
         helpOverlay.classList.add("searching");
@@ -48,6 +58,10 @@ export function ShowSearching(msg = 'Sit back and hold hand at chest height') {
 }
 
 export function HideSearching() {
+    if (helpOverlay == null){
+        return;
+    }
+
     if (helpOverlay.classList.contains("searching"))
     {
         helpOverlay.classList.remove("searching");

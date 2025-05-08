@@ -17,29 +17,6 @@
   a:hover {
     color: lightblue;
   }
-  
-  /*body {*/
-  /*  bottom: 0;*/
-  /*  font-family: "Titillium Web", sans-serif;*/
-  /*  color: white;*/
-  /*  left: 0;*/
-  /*  margin: 0;*/
-  /*  position: absolute;*/
-  /*  right: 0;*/
-  /*  top: 0;*/
-  /*  transform-origin: 0px 0px;*/
-  /*  overflow: hidden;*/
-  /*}*/
-  
-  /*.mp-full-frame-container {*/
-  /*  position: absolute;*/
-  /*  background-color: #596e73;*/
-  /*  width: 100%;*/
-  /*  max-height: 100%;*/
-  /*}*/
-/*.input_image {*/
-/*  position: absolute;*/
-/*}*/
 
   .mp-video-canvas {
     width: 320px;
