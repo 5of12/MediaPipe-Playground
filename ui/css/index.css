@@ -165,7 +165,7 @@ p {
 }
 
 .github-icon a {
-    background: url(./ui/svg/github-mark.svg) 50% /contain no-repeat;
+    background: url(../svg/github-mark.svg) 50% /contain no-repeat;
     width: 30px;
     height: 30px;
     display: block;
