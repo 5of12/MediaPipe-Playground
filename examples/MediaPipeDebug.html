@@ -9,6 +9,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../ui/css/MediaPipeHands.css">
+    <link rel="stylesheet" type="text/css" href="../ui/css/MediaPipeHelp.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
         body {
@@ -19,6 +20,18 @@
 </head>
 
 <body>
+    <div class="tutorial">
+        <button class="tutorial-origin instruction hidden waiting">
+        </button>
+        <div class="tutorial-origin text">
+          Enable the camera and make yourself visible
+        </div>
+        <div class="tutorial-origin text lower">
+          Raise a hand to see some tiny hands!
+        </div>
+        <canvas class="tutorial-origin video flipped" ></canvas>
+    </div>
+
     <mediapipe-tracking wake-mode="2" track-hands="true" track-face="true" track-body="true"></mediapipe-tracking>
     <div class="github-icon">
         <a href="https://github.com/5of12/MediaPipe-Playground" target="_blank" title="View on GitHub"></a>
